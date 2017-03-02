@@ -1,0 +1,27 @@
+/* 
+	This css file is used for "small" screens,
+	detected as being smaller than 674px wide.
+
+================= TABLE OF CONTENTS ================
+	#menu ··································· 40
+*/
+
+/* declaration of variables here if needed */
+
+/*
+======================= MENU ======================= 
+*/
+#menu { 
+	margin: 0px 0 0px 0;
+	border-bottom: 1px solid purple;
+	margin-bottom: 10px;
+}
+
+#menu li { border: 1px solid white; }
+#menu li.active { border: 1px solid purple; }
+
+/*
+==================== PAGINATION ==================== 
+*/
+
+#pagination { padding-bottom: 80px; }

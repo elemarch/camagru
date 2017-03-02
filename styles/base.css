@@ -1,0 +1,304 @@
+/* 
+	This css file is used as base for all types
+	of sizes. See full.css and small.css for
+	further details.
+
+================= TABLE OF CONTENTS ================
+	body
+	header
+	menu
+	titles
+	footer
+	content
+	links
+	columns
+	forms
+	pictures and videos
+	specific layouts
+		creation.php
+
+*/
+
+/*
+======================= BODY ======================= 
+*/
+body {
+	font-family: 'Rubik', cursive;
+	font-size: 20px;
+	color: black;
+	background-color: white;
+}
+
+/*
+====================== HEADER ====================== 
+*/
+#header {
+	/* fonts */
+	font-size: 28px;
+	color: white;
+
+	/* block */
+	background-color: purple;
+	padding: 10px 25px;
+	margin: none;
+}
+
+#header p {
+    font-family: 'Coiny', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+======================= MENU ======================= 
+*/
+#menu { font-size: 20px; }
+
+#menu a {
+	color: black;
+	text-decoration: none;
+}
+
+#menu a:visited { color: black; }
+
+#menu li {
+	/* list style */
+	list-style: none;
+	display: inline-block;
+	
+	/* block */
+	background-color: gray;
+	padding: 3px 5px;
+}
+
+#menu li.active { background-color: white; }
+
+#menu li.active a { color: purple; }
+
+/*
+====================== TITLES ====================== 
+*/
+
+h1 {
+	margin: 0 0 0px 15px;
+	font-family: 'Coiny', cursive;
+	font-size: 30px;
+
+}
+
+/*
+====================== FOOTER ====================== 
+*/
+
+#footer {
+    background-color: purple;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 9px;
+    left: 9px;
+    right: 9px;
+    padding: 5px;
+}
+
+#footer a {
+	color: purple;
+	background-color: white;
+	text-decoration: none;
+	padding: 0px 5px;
+}
+
+/*
+====================== CONTENT ===================== 
+*/
+#content {
+	width: 100%;
+	padding: 5px;
+}
+
+/*
+======================= LINKS ====================== 
+*/
+
+a {
+	color: purple;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+a:visited {color: purple; }
+
+.button {
+	cursor: pointer;
+	padding: 2px 5px;
+}
+
+.button:hover {
+	text-decoration: none;
+	background-color: purple;
+	color: white;
+}
+
+.button_delete {
+	color: #b71e1e;
+	background-color: white;
+}
+
+.button_delete:hover {
+	background-color: #b71e1e;
+}
+
+/*
+====================== COLUMNS ===================== 
+*/
+
+.text-center { text-align: center; }
+
+/*
+======================= FORMS ====================== 
+*/
+
+input[type="submit"] {
+	cursor:pointer;
+	background-color: purple;
+	color: white;
+	border: none;
+	font-family: 'Coiny', cursive;
+	text-transform: uppercase;
+	margin: 5px 0 5px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	cursor: text;
+	background-color: white;
+	border: 1px solid purple;
+}
+
+/*
+=============== PICTURES AND VIDEOS ================ 
+*/
+
+canvas,
+video {
+	border: 1px solid purple;
+	margin-left: calc((100% - 300px) / 2);
+}
+
+#layers img {
+	width: 25%;
+}
+
+#sidelist img {
+	width: 160px;
+}
+
+/*
+================= SPECIFIC LAYOUTS ================= 
+
+>> creation.php
+*/
+
+#creator-right {
+	background-color: purple;
+	color: white;
+	padding: 0 0 0 0;
+}
+
+#layers {
+    margin: 10px;
+    text-align: center;
+    background: white;
+    color: purple;
+    padding: 5px;
+    border-radius: 10px 0;
+}
+
+#sidelist {
+	padding: 0 10px 10px 10px;
+	text-align: center;
+}
+
+/*
+>> single.php
+*/
+
+#single-left { text-align: center; }
+
+#single-right {
+	background-color: purple;
+	color: white;
+}
+
+.com_head {
+    margin: -26px 0 0 0;
+}
+
+.com_head a {
+    background-color: white;
+    padding: 0 10px 0px 5px;
+    margin: 0 0 0 0;
+    border-radius: 10px 0 0 10px;
+}
+
+.comment {
+    padding: 15px;
+    border: 1px solid white;
+    margin: 20px 10px 10px 10px;
+}
+
+#counter, .num_count {
+    font-family: 'Rubik';
+    font-size: 20px;
+    margin: 0 0px 0px -7px;
+    background-color: purple;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 0 0 0px 7px;
+}
+
+.num_count { padding-right: 15px; }
+
+.arrow.button {
+    float: right;
+    margin: -4px;
+    background-color: white;
+    color: purple;
+    padding: 0px;
+}
+
+#message {
+    border: none;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 10px 0 0 0;
+    font-family: 'Rubik';
+    padding: 5px 0 0;
+}
+
+/*
+>> gallery.php
+*/
+
+#pagination { 
+	border-top: 1px solid purple;
+	padding-top: 15px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.photo_block {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.photo_block img {
+	width: 80%;
+	max-width: 300px;
+}

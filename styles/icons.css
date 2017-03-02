@@ -1,0 +1,36 @@
+/* 
+	This css file defines the icons coming from
+	the FontAwesome collection, since we cannot
+	use the provided CDN.
+
+================= TABLE OF CONTENTS ================
+	redefinition of <i>
+	icons by alphabetical order
+*/
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot');
+  src: local('FontAwesome'),
+    url("fonts/fontawesome-webfont.woff") format("woff"),
+    url("fonts/FontAwesome.otf") format("opentype"),
+    url("fonts/fontawesome-webfont.svg") format("svg");
+}
+
+/*
+=============== REDEFINITION OF <I> ================ 
+*/
+
+i { 
+	font-family: 'FontAwesome';
+	font-style: normal;
+}
+
+/*
+=========== ICONS IN ALPHABETICAL ORDER ============
+*/
+
+.comments:before	{ content: '\f086' }
+.heart:before		{ content: '\f004' }
+.star:before 		{ content: '\f005' }
+.trash:before 		{ content: '\f1f8' }
